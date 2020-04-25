@@ -23,7 +23,7 @@ users = User.create!([
 ])
 
 20.times do
-  Message.create! user: users.sample, channel: channels.sample, content: 'Hello'
+  Message.create! user: users.sample, channel: channels.sample, content: Faker::GreekPhilosophers.quote
 end
 
 puts 'Channels:'
