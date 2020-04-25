@@ -9,10 +9,25 @@ Message.destroy_all
 User.destroy_all
 Channel.destroy_all
 
-Channel.create(name: 'general')
-Channel.create(name: 'paris')
-Channel.create(name: 'react')
 
-User.create(email: 'eddielawrence23@gmail.com')
+names = %w(general react barcelona paris jobs)
 
-Message.create(user: 'eddielawrence23@gmail.com' channel: 'general' content: "Hello world");
+channels = names.map do |name|
+  Channel.find_or_create_by(name: name)
+end
+
+users = User.create!([
+  {email: 'ejacobs@lewagon.com', password: 'testtest'},
+  {email: 'ebouscasse@lewagon.com', password: 'testtest'},
+  {email: 'gdavita@lewagon.com', password: 'testtest'}
+])
+
+20.times do
+  Message.create! user: users.sample, channel: channels.sample, content: 'Hello'
+end
+
+puts 'Channels:'
+channels.each do |channel|
+  puts '-#{channel.id}: #{channel.name}'
+end
+
