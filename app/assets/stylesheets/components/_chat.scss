@@ -49,12 +49,16 @@ body {
   margin: 10px 0;
   font-size: 14px;
   color: #7c7c7c;
+  text-decoration: none;
   cursor: pointer;
+  a {
+    color: black;
+  }
 }
 
 .channels-container > ul > li.active {
   font-weight: 600;
-  color: black
+  color: black;
 }
 
 /* Column 3/3 *****************************************************************/
