@@ -18,7 +18,6 @@ class ChannelList extends Component {
         key={channel}
         className={channel === this.props.selectedChannel ? 'active' : null}
         onClick={() => this.handleClick(channel)}
-
       >
         <Link
           to={`/channels/${channel}`}>
