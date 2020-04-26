@@ -7,5 +7,4 @@ class ChannelsController < ApplicationController
       @channels = Channel.all
     end
   end
-
 end
