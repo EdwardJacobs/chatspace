@@ -15,15 +15,15 @@ class MessageList extends Component {
     this.subscribeActionCable(this.props);
   }
 
-  componentWillReceiveProps(nextProps) { // For after switching channels
+  UNSAFE_componentWillReceiveProps(nextProps) { // For after switching channels
     if (this.props.selectedChannel != nextProps.selectedChannel) {
       this.subscribeActionCable(nextProps);
     }
   }
 
-  componentWillUnmount() {
-    clearInterval(this.refresher);
-  }
+  // componentWillUnmount() {
+  //   clearInterval(this.refresher);
+  // }
 
   componentDidUpdate() {
     this.list.scrollTop = this.list.scrollHeight;
