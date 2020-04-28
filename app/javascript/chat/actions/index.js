@@ -41,3 +41,10 @@ export function selectChannel(channel) {
     payload: channel
   };
 }
+
+export function appendMessage(message) {
+  return {
+    type: 'MESSAGE_POSTED',
+    payload: message
+  }
+}

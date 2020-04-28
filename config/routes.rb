@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   end
   resources :channels, only: [:show]
   root to: 'channels#show'
+
+  mount ActionCable.server => "/cable"
 end
