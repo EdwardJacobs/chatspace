@@ -7,4 +7,10 @@ class ChannelsController < ApplicationController
       @channels = Channel.all
     end
   end
+
+  private
+
+  def channel_params
+    params.require(:channel).permit(:name)
+  end
 end
