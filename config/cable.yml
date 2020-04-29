@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis:https://chatroom-rails-redux.herokuapp.com" } %>
-  channel_prefix: chat_rails_redux_production
+  url: <%= ENV.fetch("REDISCLOUD_URL") { "redis:https://chatroom-rails-redux.herokuapp.com" } %>
+  channel_prefix: chatroom_rails_redux_production
