@@ -21,7 +21,7 @@ class ChannelList extends Component {
       >
         <Link
           to={`/channels/${channel}`}>
-          #{channel}
+          # {channel}
         </Link>
       </li>
     );
@@ -30,7 +30,7 @@ class ChannelList extends Component {
   render() {
     return (
       <div className="channels-container">
-        <span>Redux Chat</span>
+        <span>ChatSpace</span>
         <ul>
           {this.props.channels.map(this.renderChannel)}
         </ul>

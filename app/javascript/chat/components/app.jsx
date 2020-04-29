@@ -2,7 +2,7 @@ import React from 'react';
 import ChannelList from '../containers/channel_list';
 import MessageList from '../containers/message_list';
 
-import logo from '../../../assets/images/logo.png';
+import logo from '../assets/images/chatspacelogo.png';
 
 const App = (props) => {
   return (
