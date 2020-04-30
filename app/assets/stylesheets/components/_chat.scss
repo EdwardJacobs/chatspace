@@ -140,7 +140,7 @@ body {
   border-top: 1px solid rgba(79,124,172,.2);
 }
 
-input[type="text"] {
+input.form-control {
   padding: 10px;
   margin-right: 10px;
   width: 100%;
@@ -148,7 +148,14 @@ input[type="text"] {
   border-radius: 4px;
   border-color: rgba(79,124,172,.2);
   background-color: rgba(79,124,172,.05) !important;
-  outline: 0;
+}
+
+/* Remove blue focus around input */
+.form-control:hover, .form-control:active, .form-control:focus{
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-color: rgba(79,124,172,.2) !important;
 }
 
 button {
