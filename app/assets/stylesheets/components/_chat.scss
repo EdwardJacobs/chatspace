@@ -27,7 +27,7 @@ body {
 /* Column 2/3 *****************************************************************/
 
 .channels-container {
-  padding: 20px;
+  padding: 15px 20px;
   width: 220px;
   height: 100%;
   background: rgba(4,5,46,.95);
@@ -36,13 +36,13 @@ body {
 
 .channels-container > span {
   color: white;
+  opacity: .9;
   letter-spacing: 1px;
   font-weight: 900;
 }
 
 .channels-container > ul {
   list-style: none;
-  padding: 20px;
   -webkit-margin-before: 2em;
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
@@ -52,7 +52,7 @@ body {
 
 .channels-container > ul > li {
   margin: 15px 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #7c7c7c;
   text-decoration: none;
   cursor: pointer;
@@ -60,13 +60,15 @@ body {
 
 .channels-container > ul > li > a {
   text-decoration: none;
-  color: lightgray;
+  color: white;
+  opacity: .7;
 }
 
 .channels-container > ul > li.active {
-  font-weight: 900;
+  font-weight: 700;
   a {
     color: white;
+    opacity: 1;
   }
 }
 
@@ -105,13 +107,14 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+  color: rgba(4,5,46,.8);
 }
 .message-container > i > small {
   position: relative;
   margin-left: 10px;
   font-style: italic;
   font-size: 10px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .message-container > i > small::before {
