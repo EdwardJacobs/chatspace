@@ -12,7 +12,8 @@ class Message < ApplicationRecord
       author: user.email,
       content: content,
       created_at: created_at,
-      channel: channel.name
+      channel: channel.name,
+      avatar: user.avatar_url
     }
   end
 
