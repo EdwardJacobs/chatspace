@@ -30,10 +30,10 @@ users = User.create!([
     avatar_url: 'https://avatars.githubusercontent.com/EllynBsc'
   },
   {
-    email: 'gdavita@gmail.com',
+    email: 'gdevita@gmail.com',
     password: 'testtest',
     nickname: 'gus',
-    avatar_url: 'devitagus'
+    avatar_url: 'https://avatars.githubusercontent.com/devitagus'
   }
 ])
 
