@@ -28,7 +28,8 @@
   height: 100%;
   background: rgba(9,8,21,.96);
   box-sizing: border-box;
-  border: 1px solid rgba(79,124,172,.2);
+  border: 1px solid rgba(79,124,172,.3);
+  border-left: none;
 }
 
 .channels-container > span {
@@ -85,7 +86,7 @@
   padding-left: 28px;
   height: 70px;
   width: 100%;
-  border: 1px solid rgba(79,124,172,.2);
+  border: 1px solid rgba(79,124,172,.3);
   border-bottom: none;
   border-left: none;
 }
@@ -100,7 +101,7 @@
   box-sizing: border-box;
   height: 100%;
   overflow: scroll;
-  border: 1px solid rgba(79,124,172,.2);
+  border: 1px solid rgba(79,124,172,.3);
   border-left: none;
 }
 
@@ -139,7 +140,7 @@
   padding: 20px;
   box-sizing: border-box;
   height: 90px;
-  border-bottom: 1px solid rgba(79,124,172,.2);
+  border-bottom: 1px solid rgba(79,124,172,.3);
 }
 
 .channel-editor > input.form-control {
@@ -158,7 +159,7 @@
     box-shadow: none !important;
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
-    border-color: rgba(79,124,172,.2) !important;
+    border-color: rgba(79,124,172,.3) !important;
 }
 
 button {
