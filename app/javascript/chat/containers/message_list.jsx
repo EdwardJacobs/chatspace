@@ -50,7 +50,7 @@ class MessageList extends Component {
     return (
       <div className="channel-container">
         <div className="channel-title">
-          <span>Channel #{this.props.selectedChannel}</span>
+          <span>#{this.props.selectedChannel}</span>
         </div>
         <div className="channel-content" ref={(list) => { this.list = list; }}>
           {

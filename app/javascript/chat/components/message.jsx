@@ -23,8 +23,8 @@ const Message = (props) => {
         <img src={avatar} className="avatar-square" />
       </div>
       <div className="message-container-inner">
+      <span style={{color: strToRGB(author) }}>{author}</span>
         <i className="author">
-          <span style={{color: strToRGB(author) }}>{author}</span>
           <small>{time}</small>
         </i>
         <p>{emojify(content)}</p>

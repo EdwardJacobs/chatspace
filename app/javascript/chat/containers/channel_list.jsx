@@ -30,7 +30,7 @@ class ChannelList extends Component {
   render() {
     return (
       <div className="channels-container">
-        <span>ChatSpace</span>
+        <span>Channels</span>
         <ul>
           {this.props.channels.map(this.renderChannel)}
         </ul>
