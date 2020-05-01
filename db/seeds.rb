@@ -10,16 +10,16 @@ User.destroy_all
 Channel.destroy_all
 
 
-names = %w(general react barcelona paris jobs)
+names = %w(general ruby javascript react rails design jobs)
 
 channels = names.map do |name|
   Channel.find_or_create_by(name: name)
 end
 
 users = User.create!([
-  {email: 'ejacobs@lewagon.com', password: 'testtest'},
-  {email: 'ebouscasse@lewagon.com', password: 'testtest'},
-  {email: 'gdavita@lewagon.com', password: 'testtest'}
+  {email: 'ejacobs@gmail.com', password: 'testtest'},
+  {email: 'ebouscasse@gmail.com', password: 'testtest'},
+  {email: 'gdavita@gmail.com', password: 'testtest'}
 ])
 
 20.times do

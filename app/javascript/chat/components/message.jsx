@@ -5,7 +5,7 @@ function strToRGB(str) {
   if (str && str.length > 0) {
     let hash = 0;
     for (let i = 0; i < str.length; i += 1) {
-      hash = str.charCodeAt(i) + ((hash << 7) - hash);
+      hash = str.charCodeAt(i) + ((hash << 6) - hash);
     }
     const c = (hash & 0x00FFFFFF)
       .toString(16)
