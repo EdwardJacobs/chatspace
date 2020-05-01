@@ -76,7 +76,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: rgba(4,5,10,.91);
+  background: rgba(4,5,10,.94);
 }
 
 .channel-title {
@@ -103,6 +103,7 @@
   overflow: scroll;
   border: 1px solid rgba(79,124,172,.3);
   border-left: none;
+  border-bottom: none;
 }
 
 .message-container {

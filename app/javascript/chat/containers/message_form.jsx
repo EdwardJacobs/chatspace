@@ -33,6 +33,7 @@ class MessageForm extends Component {
           autoComplete="off"
           value={this.state.value}
           onChange={this.handleChange}
+          placeholder={"Message " + "#" + this.props.selectedChannel}
         />
         <button type="submit">Send</button>
       </form>
