@@ -17,9 +17,24 @@ channels = names.map do |name|
 end
 
 users = User.create!([
-  {email: 'ejacobs@gmail.com', password: 'testtest'},
-  {email: 'ebouscasse@gmail.com', password: 'testtest'},
-  {email: 'gdavita@gmail.com', password: 'testtest'}
+  {
+    email: 'ejacobs@gmail.com',
+    password: 'testtest',
+    nickname: 'edward',
+    avatar_url: 'https://avatars.githubusercontent.com/EdwardJacobs'
+  },
+  {
+    email: 'ebouscasse@gmail.com',
+    password: 'testtest',
+    nickname: 'ellyn',
+    avatar_url: 'https://avatars.githubusercontent.com/EllynBsc'
+  },
+  {
+    email: 'gdavita@gmail.com',
+    password: 'testtest',
+    nickname: 'gus',
+    avatar_url: 'devitagus'
+  }
 ])
 
 20.times do
