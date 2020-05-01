@@ -23,17 +23,17 @@
 /* Column 2/3 *****************************************************************/
 
 .channels-container {
-  padding: 15px 20px;
+  padding: 15px 25px;
   width: 220px;
   height: 100%;
-  background: rgba(4,5,46,.93);
+  background: rgba(9,8,21,.96);
   box-sizing: border-box;
+  border: 1px solid rgba(79,124,172,.2);
 }
 
 .channels-container > span {
   color: white;
-  opacity: .9;
-  letter-spacing: 1px;
+  opacity: .8;
   font-weight: 900;
 }
 
@@ -52,6 +52,7 @@
   color: #7c7c7c;
   text-decoration: none;
   cursor: pointer;
+  line-height: 1;
 }
 
 .channels-container > ul > li > a {
@@ -64,11 +65,9 @@
   font-weight: 700;
   a {
     color: white;
-    opacity: 1;
+    opacity: .8;
   }
 }
-
-
 
 /* Column 3/3 *****************************************************************/
 
@@ -76,6 +75,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  background: rgba(4,5,10,.91);
 }
 
 .channel-title {
@@ -85,10 +85,13 @@
   padding-left: 28px;
   height: 70px;
   width: 100%;
-  border-bottom: 1px solid rgba(79,124,172,.2);
+  border: 1px solid rgba(79,124,172,.2);
+  border-bottom: none;
+  border-left: none;
 }
 
 .channel-title > span {
+  color: rgba(255,255,255,.8);
   font-weight: 600;
 }
 
@@ -97,6 +100,8 @@
   box-sizing: border-box;
   height: 100%;
   overflow: scroll;
+  border: 1px solid rgba(79,124,172,.2);
+  border-left: none;
 }
 
 .message-container {
@@ -114,7 +119,7 @@
   margin-left: 10px;
   font-style: italic;
   font-size: 10px;
-  opacity: 0.8;
+  color: rgba(255,255,255,.8);
 }
 
 .message-container > i > small::before {
@@ -126,6 +131,7 @@
 
 .message-container > p {
   margin: 5px 0 10px;
+  color: rgba(255,255,255,.8);
 }
 
 .channel-editor {
@@ -133,10 +139,11 @@
   padding: 20px;
   box-sizing: border-box;
   height: 90px;
-  border-top: 1px solid rgba(79,124,172,.2);
+  border-bottom: 1px solid rgba(79,124,172,.2);
 }
 
 input.form-control {
+  color: white;
   padding: 10px;
   margin-right: 10px;
   width: 100%;
