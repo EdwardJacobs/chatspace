@@ -58,7 +58,7 @@
 .channels-container > ul > li > a {
   text-decoration: none;
   color: white;
-  opacity: .7;
+  opacity: .6;
 }
 
 .channels-container > ul > li.active {
@@ -112,14 +112,14 @@
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  color: rgba(4,5,46,.8);
+  color: rgba(4,5,46,.7);
 }
 .message-container > i > small {
   position: relative;
   margin-left: 10px;
   font-style: italic;
   font-size: 10px;
-  color: rgba(255,255,255,.8);
+  color: rgba(255,255,255,.7);
 }
 
 .message-container > i > small::before {
@@ -131,7 +131,7 @@
 
 .message-container > p {
   margin: 5px 0 10px;
-  color: rgba(255,255,255,.8);
+  color: rgba(255,255,255,.7);
 }
 
 .channel-editor {
