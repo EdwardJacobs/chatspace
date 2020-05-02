@@ -19,8 +19,12 @@ class MessageForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.createMessage(this.props.selectedChannel, this.state.value);
-    this.setState({ value: '' }); // Reset message input
+    if (this.state.value.length > 1) {
+      this.props.createMessage(this.props.selectedChannel, this.state.value)
+      this.setState({ value: '' });
+    } else {
+      this.setState({ value: '' });
+    }
   }
 
   render() {
