@@ -11,6 +11,7 @@ class Message < ApplicationRecord
     {
       id: id,
       author: user.email,
+      user_id: user_id,
       nickname: user.nickname,
       content: content,
       created_at: created_at,
