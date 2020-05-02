@@ -24,7 +24,7 @@
 
 .channels-container {
   padding: 15px 0px;
-  width: 220px;
+  width: 260px;
   height: 100%;
   background: rgba(9,8,21,.96);
   box-sizing: border-box;
@@ -35,13 +35,13 @@
 .channels-container > span {
   color: white;
   opacity: .8;
-  font-weight: 900;
-  padding-left: 15px;
+  font-weight: 700;
+  padding-left: 20px;
 }
 
 .channels-container > ul {
   list-style: none;
-  -webkit-margin-before: 2em;
+  -webkit-margin-before: 1.5em;
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;

@@ -34,6 +34,18 @@ users = User.create!([
     password: 'testtest',
     nickname: 'gus',
     avatar_url: 'https://avatars.githubusercontent.com/devitagus'
+  },
+  {
+    email: 'eminem@gmail.com',
+    password: 'testtest',
+    nickname: 'marshall',
+    avatar_url: 'https://avatars.githubusercontent.com/eminem'
+  },
+  {
+    email: 'elon@gmail.com',
+    password: 'testtest',
+    nickname: 'elon',
+    avatar_url: 'https://avatars.githubusercontent.com/elonmuskceo'
   }
 ])
 
