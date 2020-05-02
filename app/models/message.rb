@@ -1,5 +1,6 @@
 class Message < ApplicationRecord
   belongs_to :user
+
   belongs_to :channel
 
   validates :content, presence: true
@@ -10,6 +11,7 @@ class Message < ApplicationRecord
     {
       id: id,
       author: user.email,
+      nickname: user.nickname,
       content: content,
       created_at: created_at,
       channel: channel.name,

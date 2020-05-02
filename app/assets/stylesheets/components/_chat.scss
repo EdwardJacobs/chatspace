@@ -63,7 +63,7 @@
 .channels-container > ul > li > a {
   text-decoration: none;
   color: white;
-  opacity: .5;
+  opacity: .7;
 }
 
 .channels-container > ul > li.active {
@@ -128,6 +128,8 @@
 
 .message-container-inner > span {
   font-size: 16px;
+  color: rgba(255,255,255,.8);
+  font-weight: 700;
 }
 
 .message-container-inner > i {

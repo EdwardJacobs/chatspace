@@ -15,20 +15,20 @@ function strToRGB(str) {
 }
 
 const Message = (props) => {
-  const { created_at, author, content, avatar } = props.message;
+  const { created_at, author, content, avatar, nickname } = props.message;
   const time = new Date(created_at).toLocaleTimeString();
   return (
     <div className="message-container">
       <div className="message-container-avatar">
         <img src={avatar} className="avatar-square" />
       </div>
-      <div className="message-container-inner">
-      <span style={{color: strToRGB(author) }}>{author}</span>
-        <i className="author">
+        <div className="message-container-inner">
+        {nickname ? <span>{nickname}</span> : <span>{author}</span>}
+          <i className="author">
           <small>{time}</small>
-        </i>
-        <p>{emojify(content)}</p>
-      </div>
+          </i>
+          <p>{emojify(content)}</p>
+        </div>
     </div>
   );
 };
