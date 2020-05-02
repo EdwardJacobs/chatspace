@@ -1,0 +1,30 @@
+.btn-login {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #22007c;
+  transition: background 0.3s ease;
+  border: 1px solid #22007c;
+}
+
+.btn-login:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-ghost {
+  color: white;
+  border: 1px solid #22007c;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+  background: #22007c;
+  color: white;
+}
+

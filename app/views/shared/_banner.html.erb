@@ -1,0 +1,9 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h1>ChatSpace brings <strong>messaging</strong> to <strong>the world</strong>!</h1>
+    <p>Chat with your friends and colleagues</p>
+    <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "btn btn-login" %>
+    <%= link_to t(".sign_up", default: "Register"), new_user_registration_path, class: "btn btn-ghost" %>
+  </div>
+</div>
+
