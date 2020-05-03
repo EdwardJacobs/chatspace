@@ -2,8 +2,10 @@
   <div class="container">
     <h1>ChatSpace brings <strong>messaging</strong> to <strong>the world</strong>!</h1>
     <p>Chat with your friends and colleagues</p>
+    <div>
     <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "btn btn-login" %>
-    <%= link_to t(".sign_up", default: "Register"), new_user_registration_path, class: "btn btn-ghost" %>
+    <%= link_to t(".sign_up", default: "Join ChatSpace!"), new_user_registration_path, class: "btn btn-ghost" %>
+    </div>
   </div>
 </div>
 
