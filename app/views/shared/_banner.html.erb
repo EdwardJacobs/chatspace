@@ -3,8 +3,12 @@
     <h1>ChatSpace brings <strong>messaging</strong> to <strong>the world</strong>!</h1>
     <p>Chat with your friends and colleagues</p>
     <div>
-    <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "btn btn-login" %>
-    <%= link_to t(".sign_up", default: "Join ChatSpace!"), new_user_registration_path, class: "btn btn-ghost" %>
+    <% if user_signed_in? %>
+      <%= link_to "Launch ChatSpace !", channel_path(:id => Channel.first.name), class: "btn btn-login" %>
+    <% else %>
+      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "btn btn-login" %>
+      <%= link_to t(".sign_up", default: "Join ChatSpace!"), new_user_registration_path, class: "btn btn-ghost" %>
+    <% end %>
     </div>
   </div>
 </div>
