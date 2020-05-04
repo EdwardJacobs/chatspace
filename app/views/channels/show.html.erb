@@ -1,10 +1,9 @@
-<div id="chat_app"
-data-channels=<%= Channel.all.to_json %>
->
+<div id="chat_app" data-channels=<%= Channel.all.to_json %>>
 </div>
 
 <% content_for :after_js do %>
   <%= javascript_pack_tag "chat" %>
 <% end %>
+
 
 
