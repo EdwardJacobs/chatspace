@@ -20,7 +20,7 @@ const Message = (props) => {
   return (
     <div className="message-container">
       <div className="message-container-avatar">
-        <img src={avatar} className="avatar-square" />
+        { avatar ? <img src={avatar} className="avatar-square" /> : nil }
       </div>
         <div className="message-container-inner">
         {nickname ? <span>{nickname}</span> : <span>{author}</span>}
