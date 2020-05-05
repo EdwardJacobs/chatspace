@@ -27,12 +27,24 @@ class ChannelList extends Component {
     );
   }
 
+  renderUser = (user) => {
+    return (
+      <li key={user}>
+        <a>{user}</a>
+      </li>
+    )
+  }
+
   render() {
     return (
       <div className="channels-container">
         <span>Channels</span>
         <ul>
           {this.props.channels.map(this.renderChannel)}
+        </ul>
+        <ul>
+        <span>Users</span>
+          {this.props.users.map(this.renderUser)}
         </ul>
       </div>
     );
@@ -41,7 +53,8 @@ class ChannelList extends Component {
 
 function mapStateToProps(state) {
   return {
-    channels: state.channels
+    channels: state.channels,
+    users: state.users
   };
 }
 
