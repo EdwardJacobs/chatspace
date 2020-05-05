@@ -11,15 +11,18 @@ import messagesReducer from './reducers/messages_reducer';
 
 const chatContainer = document.getElementById('chat_app');
 const channels = JSON.parse(chatContainer.dataset.channels).map(c => c.name);
+const users = JSON.parse(chatContainer.dataset.users).map(u => u.nickname);
 
 const initialState = {
   messages: [],
-  channels: channels // TODO: get that from Rails DB.
+  channels: channels,
+  users: users // TODO: get that from Rails DB.
 };
 
 const reducers = combineReducers({
   messages: messagesReducer,
-  channels: (state = null, action) => state
+  channels: (state = null, action) => state,
+  users: (state = null, action) => state
 });
 
 const middlewares = applyMiddleware(ReduxPromise);
