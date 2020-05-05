@@ -20,6 +20,11 @@
               <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
             <% end %>
           </li>
+          <li>
+            <%= link_to edit_user_registration_path do %>
+              <i class="fa fa-edit"></i>  <%= t(".edit", default: "Profile") %>
+            <% end %>
+          </li>
         </ul>
       </div>
     <% end %>
