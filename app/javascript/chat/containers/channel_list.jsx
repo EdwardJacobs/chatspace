@@ -38,12 +38,12 @@ class ChannelList extends Component {
   render() {
     return (
       <div className="channels-container">
-        <span>Channels</span>
         <ul>
+        <span>Channels</span>
           {this.props.channels.map(this.renderChannel)}
         </ul>
         <ul>
-        <span>Users</span>
+        <span>Members</span>
           {this.props.users.map(this.renderUser)}
         </ul>
       </div>

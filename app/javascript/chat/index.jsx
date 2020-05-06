@@ -11,7 +11,7 @@ import messagesReducer from './reducers/messages_reducer';
 
 const chatContainer = document.getElementById('chat_app');
 const channels = JSON.parse(chatContainer.dataset.channels).map(c => c.name);
-const users = JSON.parse(chatContainer.dataset.users).map(u => u.nickname);
+const users = JSON.parse(chatContainer.dataset.users).map(u => u.nickname ? u.nickname : u.email);
 
 const initialState = {
   messages: [],
