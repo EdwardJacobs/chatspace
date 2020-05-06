@@ -14,6 +14,19 @@ import { emojify } from 'react-emojione';
 //   }
 // }
 
+const options = {
+    convertShortnames: true,
+    convertUnicode: true,
+    convertAscii: true,
+    style: {
+        backgroundImage: 'url("/path/to/your/emojione.sprites.png")',
+        height: 32,
+        margin: 4,
+    },
+    // this click handler will be set on every emoji
+    onClick: event => alert(event.target.title)
+};
+
 const Message = (props) => {
   const { created_at, author, content, avatar, nickname } = props.message;
   const time = new Date(created_at).toLocaleTimeString();
