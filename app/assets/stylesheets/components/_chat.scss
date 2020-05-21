@@ -60,18 +60,17 @@
   line-height: 1;
 }
 
-.channels-container > ul > li > a {
+.channels-container a {
   text-decoration: none;
   color: white;
-  opacity: .7;
+  opacity: .8;
 }
 
-.channels-container > ul > li.active {
+.channels-container  a.active {
   font-weight: 700;
-  a {
-    color: white;
-    opacity: .9;
-  }
+  color: white;
+  opacity: .9;
+
 }
 
 /* Column 3/3 *****************************************************************/

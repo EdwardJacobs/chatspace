@@ -14,15 +14,17 @@ class ChannelList extends Component {
 
   renderChannel = (channel) => {
     return (
-      <li
-        key={channel}
-        className={channel === this.props.selectedChannel ? 'active' : null}
-        onClick={() => this.handleClick(channel)}
-      >
-        <Link
-          to={`/channels/${channel}`}>
-          # {channel}
-        </Link>
+      <li>
+        <a
+          key={channel}
+          className={channel === this.props.selectedChannel ? 'active' : null}
+          onClick={() => this.handleClick(channel)}
+        >
+          <Link
+            to={`/channels/${channel}`}>
+            # {channel}
+          </Link>
+        </a>
       </li>
     );
   }
