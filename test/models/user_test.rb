@@ -10,7 +10,7 @@ class UserTest < ActiveSupport::TestCase
 
   test 'invalid without email' do
     @user.email = nil
-    refute @user.valid?, 'saved user without a name'
+    refute @user.valid?
     assert_not_nil @user.errors[:email], 'no validation error for email present'
   end
 
