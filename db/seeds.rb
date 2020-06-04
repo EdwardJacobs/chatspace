@@ -61,6 +61,6 @@ end
 
 puts 'Channels:'
 channels.each do |channel|
-  puts '-#{channel.id}: #{channel.name}'
+  puts "-#{channel.id}: #{channel.name}"
 end
 
